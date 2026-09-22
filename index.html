@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login Page</title>
+  <title>Login</title>
 
-    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-white min-h-screen">
 
-    <div class="login-container">
+  <div class="p-6">
 
-        <h1>Login</h1>
+    <h1 class="text-3xl font-bold mb-10">
+      Login
+    </h1>
 
-        <form>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+    <form class="space-y-7 max-w-sm">
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
+      <div>
+        <label for="email" class="block text-xl mb-2">
+          Email:
+        </label>
 
-            <button type="submit">log in</button>
-        </form>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="w-full border-2 border-gray-400 rounded-sm px-3 py-2 text-lg focus:outline-none focus:border-yellow-500"
+        >
+      </div>
 
-    </div>
+      <div>
+        <label for="password" class="block text-xl mb-2">
+          Password:
+        </label>
+
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="w-full border-2 border-gray-400 rounded-sm px-3 py-2 text-lg focus:outline-none focus:border-yellow-500"
+        >
+      </div>
+
+      <button
+        type="submit"
+        class="border-2 border-gray-400 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-md text-lg"
+      >
+        Log In
+      </button>
+
+    </form>
+
+  </div>
 
 </body>
 </html>
